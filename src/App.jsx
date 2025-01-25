@@ -1,27 +1,21 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router'
-import Home from './pages/Home'
-import SecondPage from './pages/SecondPage'
-import BecomeAPartner from './pages/BecomeAPartner'
-import InvestorForm from './pages/InvestorForm'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router";
+import Home from "./pages/Home";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className='overflow-x-hidden font-opensans text-base'>
+    <div className="overflow-x-hidden font-opensans text-base">
       <Router>
-        <Navbar/>
+        <Navbar />
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/SecondPage' element={<SecondPage/>}/>
-          <Route path='/investor-form' element={<InvestorForm/>}/>
-          <Route path='/become-a-partner' element={<BecomeAPartner/>}/>
+          <Route path="/" element={<Home />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </Router>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

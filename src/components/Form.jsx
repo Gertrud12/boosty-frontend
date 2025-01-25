@@ -1,100 +1,60 @@
-import React, { useState } from 'react';
+import React from "react";
+import RButton from "./Button";
 
-
-function MyForm() {
-  const [formData, setFormData] = useState({
-    address: '',
-    budget: '',
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.address]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // You can handle form submission here
-    console.log(formData);
-  };
-
+const Form = () => {
   return (
-    <div className="max-w-lg mx-auto p-6 bg-white rounded-lg shadow-md">
-      <p className="text-2xl font-semibold mb-4 text-right">Watin you wan use Solar do?</p>
-
-      <form onSubmit={handleSubmit} className="space-y-10">
-
-      <div className="mb-6 flex items-center pl-3 space-x-3 pt-10 pb-40px">
-          <input
-            type="checkbox"
-            id="agreeToTerms"
-            name="agreeToTerms"
-            checked={formData.agreeToTerms}
-            onChange={handleChange}
-            className="h-4 w-4 text-indigo-600 border-gray-300 rounded"
-          />
-          <label htmlFor="agreeToTerms" className="ml-2 text-sm text-gray-700">
-            For my business
-          </label>
-
-          <input
-            type="checkbox"
-            id="agreeToTerms"
-            name="agreeToTerms"
-            checked={formData.agreeToTerms}
-            onChange={handleChange}
-            className="h-4 w-4 text-indigo-600 border-gray-300 rounded"
-          />
-          <label htmlFor="agreeToTerms" className="ml-2 text-sm text-gray-700">
-            For my home
-          </label>
+    <div className="bg-light_gray shadow-md h-max rounded-xl md:w-[90%] lg:w-[400px] mx-auto lg:mx-0 p-4 lg:p-7">
+      <div className="flex items-center justify-between px-2">
+        <div className="w-[60px] h-[60px] bg-main_yellow flex items-center justify-center rounded-full">
+          Eye
         </div>
 
-        <div>
-          <label className="block text-sm font-medium text-gray-700">
-            What's is Your Address
-          </label>
-          <input
-            type="text"
-            id="address"
-            name="address"
-            value={formData.address}
-            onChange={handleChange}
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-            
-          />
+        <div className="relative border border-main_yellow text-black px-3 text-sm py-5 rounded-2xl max-w-[100%] shadow-md ml-6 font-bold">
+          Wetin you wan use solar do?
+          {/* Tail for the chat bubble (left center) */}
+          <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-[10px] border-t-transparent border-r-[10px] border-r-main_yellow border-b-[10px] border-b-transparent"></div>
         </div>
-
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-            What's Your Budget? (Naira)
-          </label>
-          <input
-            type="budget"
-            id="budget"
-            name="budget"
-            value={formData.budget}
-            onChange={handleChange}
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-          />
-        </div>
-
-        
-
-        <div className="flex justify-end pt-20 pb-30">
-          <button
-            type="submit"
-            className=" py-2 px-4 bg-black text-yellow-500 text-xs font-small rounded-2xl shadow-sm  focus:outline-none focus:ring-2 "
-          >
-            Continue
-          </button>
-        </div>
-      </form>
+      </div>
+      <div className="border-b border-main_yellow pb-7">
+        <form className="mt-9 bg-dark_gray/10 p-6 rounded-lg border border-dark_gray/5">
+          <div className="flex items-center justify-between">
+            <div className="flex gap-2">
+              <input type="checkbox" />
+              <label htmlFor="for-my-business">For My Business</label>
+            </div>
+            <div className="flex gap-2">
+              <input type="checkbox" />
+              <label htmlFor="for-my-home">For My Home</label>
+            </div>
+          </div>
+          <div className="mt-5 space-y-6">
+            <div className="space-y-2">
+              <label htmlFor="whats-your-address">What's Your Address</label>
+              <input
+                type="text"
+                className="py-[10px] px-6 w-full border border-dark_gray/50 rounded-md focus:outline-none"
+              />
+            </div>
+            <div className="space-y-2">
+              <label htmlFor="whats-your-budget">
+                What's Your Budget? (Naira)
+              </label>
+              <input
+                type="text"
+                className="py-[10px] px-6 w-full border border-dark_gray/50 rounded-md focus:outline-none"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div className="flex items-center justify-end mt-10">
+        <RButton
+          btnText={`Continue`}
+          btnStyle={`bg-black w-full lg:w-[102px] text-main_yellow h-auto py-2 rounded-md lg:rounded-full border border-dark_gray`}
+        />
+      </div>
     </div>
   );
-}
+};
 
-
-export default MyForm;
+export default Form;

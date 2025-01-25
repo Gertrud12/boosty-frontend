@@ -1,11 +1,13 @@
 import React from "react";
 
-const SmallButton = () => {
+const RButton = ({ btnText, btnStyle }) => {
   return (
-    <button className="px-3 py-1 text-xs font-semibold text-white bg-indigo-500 rounded hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 justify-end">
-      Small Button
+    <button
+      className={`${btnStyle} px-3 py-1 hover:shadow-md hover:shadow-black/30 duration-300 transition-all ease-linear`}
+    >
+      {btnText}
     </button>
   );
 };
 
-export default SmallButton;
+export default RButton;
