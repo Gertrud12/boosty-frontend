@@ -50,7 +50,7 @@ const Form = () => {
       <div className="flex items-center justify-end mt-10">
         <RButton
           btnText={`Continue`}
-          btnStyle={`bg-black w-full lg:w-[102px] text-main_yellow h-auto py-2 rounded-md lg:rounded-full border border-dark_gray`}
+          btnStyle={`bg-black w-full lg:w-[102px] text-main_yellow h-auto py-3 rounded-md lg:rounded-full border border-dark_gray`}
         />
       </div>
     </div>
