@@ -20,22 +20,22 @@ const HomeCalculateSection = () => {
         <div className="flex items-center justify-center gap-4">
           <Sun className="text-main_yellow" size={43} />
           <span className="text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            minus accusantium repellendus!
+            Use the solar assitance to estimate your
+            energy needs and savings
           </span>
         </div>
         <div className="flex items-center justify-center gap-4">
           <Sun className="text-main_yellow" size={43} />
           <span className="text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            minus accusantium repellendus!
+            Customize your system and explore
+            financing options
           </span>
         </div>
         <div className="flex items-center justify-center gap-4">
           <Sun className="text-main_yellow" size={43} />
           <span className="text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            minus accusantium repellendus!
+            Schedule installation and enjoy reliable
+            clean energy
           </span>
         </div>
       </div>

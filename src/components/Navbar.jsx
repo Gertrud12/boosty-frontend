@@ -40,7 +40,7 @@ const Navbar = () => {
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "text-main_yellow font-bold"
+                ? "text-main_yellow font-sm"
                 : "hover:underline hover:text-main_yellow drop-shadow-sm duration-300 transition-all ease-linear"
             }
           >
@@ -52,7 +52,7 @@ const Navbar = () => {
             to="/become-a-partner"
             className={({ isActive }) =>
               isActive
-                ? "text-main_yellow font-bold"
+                ? "text-main_yellow font-sm"
                 : "hover:underline hover:text-main_yellow drop-shadow-sm duration-300 transition-all ease-linear"
             }
           >
@@ -64,7 +64,7 @@ const Navbar = () => {
             to="/fund-solar-projects"
             className={({ isActive }) =>
               isActive
-                ? "text-main_yellow font-bold"
+                ? "text-main_yellow font-sm"
                 : "hover:underline hover:text-main_yellow drop-shadow-sm duration-300 transition-all ease-linear"
             }
           >

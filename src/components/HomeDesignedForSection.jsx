@@ -1,5 +1,7 @@
 import React from "react";
 import RButton from "./Button";
+import Robot from "../Images/Glyph.png"
+import Vector from "../Images/Vector.png"
 
 const HomeDesignedForSection = () => {
   return (
@@ -12,27 +14,36 @@ const HomeDesignedForSection = () => {
         {/* box 1 */}
         <div>
           <div className="w-[40px] h-[40px] bg-main_yellow flex items-center justify-center p-6">
-            Icon
+            <img
+                          src={Robot}
+                          alt="Preview"
+                      />
           </div>
           <p className="text-lg font-bold capitalize mt-3">
-            topic Lorem ipsum dolor sit amet
+            Smart Solar Assistant
           </p>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur molestias debitis accusantium ut animi.
+           Personalize your solar <br></br>
+          energy system in minutes.
           </p>
         </div>
         {/* box 2 */}
         <div>
-          <div className="w-[40px] h-[40px] bg-main_yellow flex items-center justify-center p-6">
-            Icon
+          <div className="w-[40px] h-[40px] flex items-center justify-center p-6">
+          <div className="w-full h-[400px] lg:h-[600px] flex items-center justify-center">
+                    <img
+                        src={Vector}
+                        alt="Preview"
+                    />
+                  </div>
           </div>
           <p className="text-lg font-bold capitalize mt-3">
-            topic Lorem ipsum dolor sit amet
+            Flexible Financing
           </p>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur molestias debitis accusantium ut animi.
+            Buy now, pay later for <br></br>
+            verified users or pay <br></br>
+            upfront.
           </p>
         </div>
         {/* box 3 */}
@@ -41,11 +52,13 @@ const HomeDesignedForSection = () => {
             Icon
           </div>
           <p className="text-lg font-bold capitalize mt-3">
-            topic Lorem ipsum dolor sit amet
+          End-to-End Support
           </p>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur molestias debitis accusantium ut animi.
+           From customization of <br></br>
+           solar system to <br></br>
+           professional installation.
+           
           </p>
         </div>
         {/* box 4 */}
@@ -54,17 +67,18 @@ const HomeDesignedForSection = () => {
             Icon
           </div>
           <p className="text-lg font-bold capitalize mt-3">
-            topic Lorem ipsum dolor sit amet
+            CO2 Savings Tracker
           </p>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur molestias debitis accusantium ut animi.
+            See how you're <br></br>
+             contributing to a greener <br></br>
+             future.
           </p>
         </div>
       </div>
       <div className="flex items-center justify-start mt-10">
         <RButton
-          btnText={`section btn text`}
+          btnText={`start now`}
           btnStyle={`bg-black w-full lg:w-max text-main_yellow h-auto py-3 px-10 capitalize rounded-md lg:rounded-full border border-dark_gray`}
         />
       </div>

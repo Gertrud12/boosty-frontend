@@ -10,13 +10,13 @@ const Footer = () => {
         {/* Input */}
         <div className="w-full">
           <span className="text-main_yellow capitalize font-semibold">
-            Text on top of the footer input
+            Subscribe to Newsletter
           </span>
           <div className="relative mt-4 w-full">
             <input
               type="text"
               className="py-4 px-6 w-full border border-dark_gray/50 rounded-md focus:outline-none"
-              placeholder="Write placeholder of the input here..."
+              placeholder="Enter your email"
             />
             {/* Button positioned absolutely at the right of the input */}
             <RButton
