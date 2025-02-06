@@ -4,7 +4,7 @@ import EYE from "../Images/Video .mp4"
 
 const Form = () => {
   return (
-    <div className="bg-light_gray shadow-md h-max rounded-xl md:w-[90%] lg:w-[400px] mx-auto lg:mx-0 p-4 lg:p-7">
+    <div className="bg-light_gray shadow-md h-max rounded-xl md:w-[90%] lg:w-[400px] mx-auto lg:mx-0 p-4 lg:p-7 pt-10">
       <div className="flex items-center justify-between px-2">
         <div className="w-[60px] h-[60px] flex items-center justify-center rounded-full">
           <img

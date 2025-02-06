@@ -1,23 +1,24 @@
 import React from "react";
 import RButton from "./Button";
-import Robot from "../Images/Glyph.png"
-import Vector from "../Images/Vector.png"
+import co2 from "../Images/co2-icon 1.svg"
+// import Vector from "../Images/Vector.png"
 
 const HomeDesignedForSection = () => {
   return (
     <div className="py-20 px-[35px] md:px-28 lg:px-56">
-      <h1 className="capitalize text-[40px] font-bold leading-tight md:text-center lg:text-start mb-8 w-full lg:w-[45%]">
+      <h1 className="capitalize text-[40px] font-bold leading-tight md:text-center lg:text-start mb-8 w-full lg:w-[45%] text-#2B2D2C">
         Designed for nigerians, built for your energy needs
       </h1>
-      {/* box icon sections */}
+      
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-14">
-        {/* box 1 */}
+        
+
         <div>
           <div className="w-[40px] h-[40px] bg-main_yellow flex items-center justify-center p-6">
-            <img
+            {/* <img
                           src={Robot}
                           alt="Preview"
-                      />
+                      /> */}
           </div>
           <p className="text-lg font-bold capitalize mt-3">
             Smart Solar Assistant
@@ -27,14 +28,14 @@ const HomeDesignedForSection = () => {
           energy system in minutes.
           </p>
         </div>
-        {/* box 2 */}
+        
         <div>
           <div className="w-[40px] h-[40px] flex items-center justify-center p-6">
           <div className="w-full h-[400px] lg:h-[600px] flex items-center justify-center">
-                    <img
+                    {/* <img
                         src={Vector}
                         alt="Preview"
-                    />
+                    /> */}
                   </div>
           </div>
           <p className="text-lg font-bold capitalize mt-3">
@@ -46,7 +47,7 @@ const HomeDesignedForSection = () => {
             upfront.
           </p>
         </div>
-        {/* box 3 */}
+        
         <div>
           <div className="w-[40px] h-[40px] bg-main_yellow flex items-center justify-center p-6">
             Icon
@@ -61,10 +62,10 @@ const HomeDesignedForSection = () => {
            
           </p>
         </div>
-        {/* box 4 */}
+        
         <div>
           <div className="w-[40px] h-[40px] bg-main_yellow flex items-center justify-center p-6">
-            Icon
+           Icon
           </div>
           <p className="text-lg font-bold capitalize mt-3">
             CO2 Savings Tracker

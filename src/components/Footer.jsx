@@ -27,42 +27,40 @@ const Footer = () => {
         </div>
         {/* uls */}
         <ul className="w-full">
-          <li className="font-bold capitalize mb-3">Footer Link Topic 1</li>
+          <li className="font-bold capitalize mb-3">Company</li>
           <li>
-            <Link to="/">Footer Link</Link>
+            <Link to="/">Solar Assitant</Link>
           </li>
           <li>
-            <Link to="/">Footer Link</Link>
+            <Link to="/">Become a partner</Link>
           </li>
           <li>
-            <Link to="/">Footer Link</Link>
-          </li>
-        </ul>
-        {/* uls */}
-        <ul className="w-full">
-          <li className="font-bold capitalize mb-3">Footer Link Topic 1</li>
-          <li>
-            <Link to="/">Footer Link</Link>
-          </li>
-          <li>
-            <Link to="/">Footer Link</Link>
-          </li>
-          <li>
-            <Link to="/">Footer Link</Link>
+            <Link to="/">Fund Solar Projects</Link>
           </li>
         </ul>
         {/* uls */}
         <ul className="w-full">
-          <li className="font-bold capitalize mb-3">Footer Link Topic 1</li>
+          <li className="font-bold capitalize mb-3">Resources and Legal</li>
           <li>
-            <Link to="/">Footer Link</Link>
+            <Link to="/">FAQ's</Link>
           </li>
           <li>
-            <Link to="/">Footer Link</Link>
+            <Link to="/">Terms and Conditions</Link>
           </li>
           <li>
-            <Link to="/">Footer Link</Link>
+            <Link to="/">Privacy Policy</Link>
           </li>
+        </ul>
+        {/* uls */}
+        <ul className="w-full">
+          <li className="font-bold capitalize mb-3">Contact us</li>
+          <li>
+            <Link to="/">boostytech50@gmail.com</Link>
+          </li>
+          <li>
+            <Link to="/">+234 9088 8888</Link>
+          </li>
+          
         </ul>
       </div>
     </nav>

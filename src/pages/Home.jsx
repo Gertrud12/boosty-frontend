@@ -62,15 +62,15 @@ const Home = () => {
         </div>
       </div>
 
-      {/* calculation Section */}
+      
       <div>
         <HomeCalculateSection />
       </div>
 
-      {/* Designed section */}
+     
       <HomeDesignedForSection />
 
-      {/* FAQ Section */}
+     
       <div className="pl-22">
         <FAQ questions={questionsData} />
       </div>
